@@ -11,6 +11,8 @@ Group:		User Interface/Desktops
 URL:		https://github.com/solus-project/evopop-icon-theme
 Source0:	%{name}-%{version}-%{daterev}.tar.xz
 
+BuildRequires:	git
+
 BuildArch:  noarch
 
 %description
