@@ -12,6 +12,7 @@ URL:		https://github.com/solus-project/evopop-icon-theme
 Source0:	%{name}-%{version}-%{daterev}.tar.xz
 
 BuildRequires:	git
+BuildRequires:	automake
 
 BuildArch:  noarch
 
