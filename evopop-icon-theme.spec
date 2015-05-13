@@ -4,7 +4,7 @@
 Summary:	Default icon theme for OzonOS
 Name:		evopop-icon-theme
 Version:	0.6
-Release:	0.1.%{?daterev}%{?dist}
+Release:	0.2.%{?daterev}%{?dist}
 
 License:	GPLv3
 Group:		User Interface/Desktops
@@ -34,10 +34,22 @@ BuildArch:  noarch
 %defattr(-,root,root)
 %doc README.md
 %license LICENSE
-%{_datadir}/icons/%{theme}
+%{_datadir}/icons/%{theme}/scalable/apps/*.svg
+%{_datadir}/icons/%{theme}/scalable/devices/*.svg
+%{_datadir}/icons/%{theme}/scalable/mimetypes/*.svg
+%{_datadir}/icons/%{theme}/scalable/places/*.svg
+%{_datadir}/icons/%{theme}/scalable/emblems/*.svg
+%{_datadir}/icons/%{theme}/scalable/places/*
+%{_datadir}/icons/%{theme}/??x??/*
+%{_datadir}/icons/%{theme}/???x???/*
+%{_datadir}/icons/EvoPop/symbolic
+%ghost %{_datadir}/icons/EvoPop/index.theme
 
 
 %changelog
+* Wed May 13 2015 Arkady L. Shane <ashejn@russianfedora.ru> - 0.6-0.2.20150501gitfacf86.R
+- update %files section
+
 * Wed May 13 2015 Arkady L. Shane <ashejn@russianfedora.ru> - 0.6-0.1.20150501gitfacf86.R
 - update to last snapshot 20150501gitfacf86
 
