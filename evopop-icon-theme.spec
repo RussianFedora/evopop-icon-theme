@@ -1,9 +1,9 @@
 %global theme	EvoPop
-%global daterev	20150411gitb97c1b
+%global daterev	20150501gitfacf86
 
 Summary:	Default icon theme for OzonOS
 Name:		evopop-icon-theme
-Version:	0.3
+Version:	0.6
 Release:	0.1.%{?daterev}%{?dist}
 
 License:	GPLv3
@@ -38,5 +38,8 @@ BuildArch:  noarch
 
 
 %changelog
+* Wed May 13 2015 Arkady L. Shane <ashejn@russianfedora.ru> - 0.6-0.1.20150501gitfacf86.R
+- update to last snapshot 20150501gitfacf86
+
 * Sat Apr 11 2015 Arkady L. Shane <ashejn@russianfedora.ru> - 0.3-0.1.20150411gitb97c1b.R
 - initial build
