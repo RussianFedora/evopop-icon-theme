@@ -29,6 +29,23 @@ BuildArch:  noarch
 %install
 %{make_install}
 
+touch $RPM_BUILD_ROOT%{_datadir}/icons/%{theme}/icon-theme.cache
+
+
+%post
+touch --no-create %{_datadir}/icons/%{theme} &>/dev/null || :
+
+
+%postun
+if [ $1 -eq 0 ] ; then
+    touch --no-create %{_datadir}/icons/%{theme} &>/dev/null
+    gtk-update-icon-cache %{_datadir}/icons/%{theme} &>/dev/null || :
+fi
+
+
+%posttrans
+gtk-update-icon-cache %{_datadir}/icons/%{theme} &>/dev/null || :
+
 
 %files
 %defattr(-,root,root)
@@ -40,8 +57,9 @@ BuildArch:  noarch
 %{_datadir}/icons/%{theme}/scalable/emblems/*.svg
 %{_datadir}/icons/%{theme}/??x??/*
 %{_datadir}/icons/%{theme}/???x???/*
-%{_datadir}/icons/EvoPop/symbolic
-%{_datadir}/icons/EvoPop/index.theme
+%{_datadir}/icons/%{theme}/symbolic
+%{_datadir}/icons/%{theme}/index.theme
+%ghost %{_datadir}/icons/%{theme}/icon-theme.cache
 
 
 %changelog
