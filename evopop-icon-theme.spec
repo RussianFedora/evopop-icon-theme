@@ -36,10 +36,8 @@ BuildArch:  noarch
 %license LICENSE
 %{_datadir}/icons/%{theme}/scalable/apps/*.svg
 %{_datadir}/icons/%{theme}/scalable/devices/*.svg
-%{_datadir}/icons/%{theme}/scalable/mimetypes/*.svg
 %{_datadir}/icons/%{theme}/scalable/places/*.svg
 %{_datadir}/icons/%{theme}/scalable/emblems/*.svg
-%{_datadir}/icons/%{theme}/scalable/places/*
 %{_datadir}/icons/%{theme}/??x??/*
 %{_datadir}/icons/%{theme}/???x???/*
 %{_datadir}/icons/EvoPop/symbolic
