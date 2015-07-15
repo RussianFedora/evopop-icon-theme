@@ -1,10 +1,10 @@
 %global theme	EvoPop
-%global daterev	20150515gitcf6f39
+%global daterev	20150601git290909
 
 Summary:	Default icon theme for OzonOS
 Name:		evopop-icon-theme
 Version:	0.6
-Release:	0.3.%{?daterev}%{?dist}
+Release:	0.4.%{?daterev}%{?dist}
 
 License:	GPLv3
 Group:		User Interface/Desktops
@@ -54,7 +54,7 @@ gtk-update-icon-cache %{_datadir}/icons/%{theme} &>/dev/null || :
 %{_datadir}/icons/%{theme}/scalable/apps/*.svg
 %{_datadir}/icons/%{theme}/scalable/devices/*.svg
 %{_datadir}/icons/%{theme}/scalable/places/*.svg
-%{_datadir}/icons/%{theme}/scalable/emblems/*.svg
+%{_datadir}/icons/%{theme}/scalable/panel/*.svg
 %{_datadir}/icons/%{theme}/??x??/*
 %{_datadir}/icons/%{theme}/???x???/*
 %{_datadir}/icons/%{theme}/symbolic
@@ -63,6 +63,9 @@ gtk-update-icon-cache %{_datadir}/icons/%{theme} &>/dev/null || :
 
 
 %changelog
+* Wed Jul 15 2015 Arkady L. Shane <ashejn@russianfedora.ru> - 0.6-0.4.20150601git290909.R
+- update to last snapshot
+
 * Mon May 18 2015 Arkady L. Shane <ashejn@russianfedora.ru> - 0.6-0.3.20150515gitcf6f39.R
 - update to 20150515gitcf6f39
 - drop ghost tag
