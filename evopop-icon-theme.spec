@@ -33,6 +33,7 @@ touch $RPM_BUILD_ROOT%{_datadir}/icons/%{theme}/icon-theme.cache
 
 
 %post
+%{_bindir}/gtk-update-icon-cache --quiet %{_datadir}/icons/%{theme} || :
 touch --no-create %{_datadir}/icons/%{theme} &>/dev/null || :
 
 
