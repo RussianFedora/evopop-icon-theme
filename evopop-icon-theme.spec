@@ -1,10 +1,10 @@
 %global theme	EvoPop
-%global daterev	20160125gitfd1c65
+%global daterev	20160125git44eafb
 
 Summary:	Default icon theme for OzonOS
 Name:		evopop-icon-theme
 Version:	0.7
-Release:	0.1.%{?daterev}%{?dist}
+Release:	0.2.%{?daterev}%{?dist}
 
 License:	GPLv3
 Group:		User Interface/Desktops
@@ -64,6 +64,10 @@ gtk-update-icon-cache %{_datadir}/icons/%{theme} &>/dev/null || :
 
 
 %changelog
+* Mon Jan 25 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.2.20160125git44eafb.R
+- added logview.png, display.png, pavucontrol.png, rpmdrake.png
+- create some symlinks for LibreOffice in ROSA Linux
+
 * Mon Jan 25 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.1.20160125gitfd1c65.R
 - change url to forked theme
 - create many new symlinks
