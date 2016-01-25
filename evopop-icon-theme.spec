@@ -1,5 +1,5 @@
 %global theme	EvoPop
-%global daterev	20160125gitc55248
+%global daterev	20160125gitfd1c65
 
 Summary:	Default icon theme for OzonOS
 Name:		evopop-icon-theme
@@ -64,7 +64,7 @@ gtk-update-icon-cache %{_datadir}/icons/%{theme} &>/dev/null || :
 
 
 %changelog
-* Mon Jan 25 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.1.20160125gitc55248.R
+* Mon Jan 25 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.1.20160125gitfd1c65.R
 - change url to forked theme
 - create many new symlinks
 
