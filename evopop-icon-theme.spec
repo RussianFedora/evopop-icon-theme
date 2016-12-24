@@ -1,12 +1,12 @@
 %global theme	EvoPop
-%global daterev	20161006git592000
+%global daterev	20161224git5d0825
 
 Summary:	Default icon theme for OzonOS
 Name:		evopop-icon-theme
 Version:	0.7
-Release:	0.4.%{?daterev}%{?dist}
+Release:	0.5.%{?daterev}%{?dist}
 
-License:	GPLv3
+License:	CC-BY
 Group:		User Interface/Desktops
 URL:		https://github.com/solus-project/evopop-icon-theme
 Source0:	%{name}-%{version}-%{daterev}.tar.xz
@@ -29,7 +29,7 @@ BuildArch:  noarch
 %install
 %{make_install}
 
-touch $RPM_BUILD_ROOT%{_datadir}/icons/%{theme}/icon-theme.cache
+touch %{buildroot}%{_datadir}/icons/%{theme}/icon-theme.cache
 
 
 %post
@@ -64,6 +64,11 @@ gtk-update-icon-cache %{_datadir}/icons/%{theme} &>/dev/null || :
 
 
 %changelog
+* Sat Dec 24 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.5.20161224git5d0825
+- added weather, cheese, totem, xchat, gnome-documents, clipit, calendar icons
+- change license to CC-BY
+- fix E: script-without-shebang
+
 * Thu Oct  6 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.4.20161006git592000
 - added symlinks to new org.gnome.Nautilus icon
 
@@ -86,7 +91,7 @@ gtk-update-icon-cache %{_datadir}/icons/%{theme} &>/dev/null || :
 - drop ghost tag
 
 * Wed May 13 2015 Arkady L. Shane <ashejn@russianfedora.ru> - 0.6-0.2.20150501gitfacf86.R
-- update %files section
+- update %%files section
 
 * Wed May 13 2015 Arkady L. Shane <ashejn@russianfedora.ru> - 0.6-0.1.20150501gitfacf86.R
 - update to last snapshot 20150501gitfacf86
