@@ -1,5 +1,5 @@
 %global theme	EvoPop
-%global daterev	20161224git5d0825
+%global daterev	20161225git615d27
 
 Summary:	Default icon theme for OzonOS
 Name:		evopop-icon-theme
@@ -64,10 +64,11 @@ gtk-update-icon-cache %{_datadir}/icons/%{theme} &>/dev/null || :
 
 
 %changelog
-* Sat Dec 24 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.5.20161224git5d0825
+* Sun Dec 25 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.5.20161225git615d27
 - added weather, cheese, totem, xchat, gnome-documents, clipit, calendar icons
 - change license to CC-BY
 - fix E: script-without-shebang
+- merge some icons from https://github.com/snwh/paper-icon-theme
 
 * Thu Oct  6 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.4.20161006git592000
 - added symlinks to new org.gnome.Nautilus icon
