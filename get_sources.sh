@@ -4,7 +4,7 @@ NAME=$(rpm -q --specfile *.spec --qf "%{name}")
 VERSION=$(rpm -q --specfile *.spec --qf "%{version}")
 
 rm -rf $NAME-$VERSION
-git clone https://github.com/RussianFedora/$NAME-source.git $NAME-$VERSION
+git clone https://github.com/RussianFedora/$NAME-source.git $NAME-$VERSION --depth 1
 
 cd $NAME-$VERSION
 DATE=$(git log -1 --date=iso | awk '/Date:/ { print $2 }' | sed 's@-@@g')
