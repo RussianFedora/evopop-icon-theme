@@ -1,5 +1,5 @@
 %global theme	EvoPop
-%global daterev	20161225git615d27
+%global daterev	20161226git78f76a
 
 Summary:	Default icon theme for OzonOS
 Name:		evopop-icon-theme
@@ -33,19 +33,19 @@ touch %{buildroot}%{_datadir}/icons/%{theme}/icon-theme.cache
 
 
 %post
-%{_bindir}/gtk-update-icon-cache --quiet %{_datadir}/icons/%{theme} || :
+%{_bindir}/gtk-update-icon-cache -f --quiet %{_datadir}/icons/%{theme} || :
 touch --no-create %{_datadir}/icons/%{theme} &>/dev/null || :
 
 
 %postun
 if [ $1 -eq 0 ] ; then
     touch --no-create %{_datadir}/icons/%{theme} &>/dev/null
-    gtk-update-icon-cache %{_datadir}/icons/%{theme} &>/dev/null || :
+    gtk-update-icon-cache -f %{_datadir}/icons/%{theme} &>/dev/null || :
 fi
 
 
 %posttrans
-gtk-update-icon-cache %{_datadir}/icons/%{theme} &>/dev/null || :
+gtk-update-icon-cache -f %{_datadir}/icons/%{theme} &>/dev/null || :
 
 
 %files
@@ -64,6 +64,10 @@ gtk-update-icon-cache %{_datadir}/icons/%{theme} &>/dev/null || :
 
 
 %changelog
+* Mon Dec 26 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.5.20161226git78f76a
+- added icons for sealert
+- update shutter icon
+
 * Sun Dec 25 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.5.20161225git615d27
 - added weather, cheese, totem, xchat, gnome-documents, clipit, calendar icons
 - change license to CC-BY
