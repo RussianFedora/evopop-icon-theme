@@ -1,5 +1,5 @@
 %global theme	EvoPop
-%global daterev	20161226git78f76a
+%global daterev	20161227git058041
 
 Summary:	Default icon theme for OzonOS
 Name:		evopop-icon-theme
@@ -64,6 +64,9 @@ gtk-update-icon-cache -f %{_datadir}/icons/%{theme} &>/dev/null || :
 
 
 %changelog
+* Tue Dec 27 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.5.20161227git058041
+- added icon for GNOME Photos
+
 * Mon Dec 26 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.5.20161226git78f76a
 - added icons for sealert
 - update shutter icon
