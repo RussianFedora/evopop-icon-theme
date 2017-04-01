@@ -1,5 +1,5 @@
 %global theme	EvoPop
-%global daterev	20170402gita048f68
+%global daterev	20170402git048f68
 
 Summary:	Default icon theme for OzonOS
 Name:		evopop-icon-theme
