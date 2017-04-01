@@ -1,10 +1,10 @@
 %global theme	EvoPop
-%global daterev	20161227git058041
+%global daterev	20170401gita5773f
 
 Summary:	Default icon theme for OzonOS
 Name:		evopop-icon-theme
 Version:	0.7
-Release:	0.5.%{?daterev}%{?dist}
+Release:	0.6.%{?daterev}%{?dist}
 
 License:	CC-BY
 Group:		User Interface/Desktops
@@ -64,6 +64,9 @@ gtk-update-icon-cache -f %{_datadir}/icons/%{theme} &>/dev/null || :
 
 
 %changelog
+* Sun Apr  2 2017 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.6.20170402gita5773f
+- added com.gexperts.Tilix.png icon
+
 * Tue Dec 27 2016 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.5.20161227git058041
 - added icon for GNOME Photos
 
