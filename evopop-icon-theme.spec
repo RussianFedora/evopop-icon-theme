@@ -1,10 +1,10 @@
 %global theme	EvoPop
-%global daterev	20170402git048f68
+%global daterev	20170417gitb5dcb5
 
 Summary:	Default icon theme for OzonOS
 Name:		evopop-icon-theme
 Version:	0.7
-Release:	0.7.%{?daterev}%{?dist}
+Release:	0.8.%{?daterev}%{?dist}
 
 License:	CC-BY
 Group:		User Interface/Desktops
@@ -64,6 +64,9 @@ gtk-update-icon-cache -f %{_datadir}/icons/%{theme} &>/dev/null || :
 
 
 %changelog
+* Mon Apr 17 2017 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.8.20170417gitb5dcb5
+- added org.gnome.Epiphany.png icon
+
 * Sun Apr  2 2017 Arkady L. Shane <ashejn@russianfedora.ru> - 0.7-0.6.20170402git048f68
 - update symlinks
 
